@@ -1,9 +1,9 @@
 {
     "swagger": "2.0",
-    "host": "fhir3.healthintersections.com.au",
-    "basePath": "/open",
+    "host": "fhir3.healthintersections.com.au/open",
+    "basePath": "/",
     "schemes": [
-        "https"
+        "http"
     ],
     "paths": {
         "/Appointment/{id}/_tags": {
@@ -602,8 +602,8 @@
     },
     "info": {
         "title": "FHIR Appointment",
-        "description": "",
-        "version": "DSTU 2"
+		"description" : "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s). For more information: https://www.hl7.org/fhir/appointment.html",
+		"version" : "2"
     },
     "x-axway": {
         "corsEnabled": true,
@@ -612,6 +612,8 @@
         ],
         "serviceType": "rest",
         "deprecated": false,
-        "tags": {}
+        "tags" : {
+			"Group" : [ "FHIR", " Workflow", " Scheduling" ]
+		}
     }
 }
